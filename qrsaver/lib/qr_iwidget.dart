@@ -32,7 +32,8 @@ Future<String> saveImage(Uint8List bytes) async{
     _getStoragePermission();
     final result = await ImageGallerySaver.saveImage(
       bytes,
-      name: 'hello ',
+      name: 'hello ',  /** here u can put your image name ,
+                           you can much it with a DateTime.now() so every image will the unique name      */  
       );
       print(result);
     return result['filePath'];
