@@ -26,6 +26,7 @@ Future _getStoragePermission() async {
     });
   }
 }
+
 Future<String> saveImage(Uint8List bytes) async{
 
     _getStoragePermission();
@@ -48,7 +49,7 @@ Future<String> saveImage(Uint8List bytes) async{
             controller: controller,
             child:QrImage(
               backgroundColor: Colors.white,
-                   data: 'Saving Qr code with screenshot',
+                   data: 'Saving Qr code with screenshot ^_^',
                    version: QrVersions.auto,
                    size: 320,
                    gapless: false,
